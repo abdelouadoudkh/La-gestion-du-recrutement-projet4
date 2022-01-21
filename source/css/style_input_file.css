@@ -1,0 +1,31 @@
+
+input[type="file"]{
+
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  content: none;
+
+}
+/*
+.custom-file-input {
+  color: transparent;
+}
+*/
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+
+}
+
+.icon {
+  padding: 11px;
+  background: #4169e1;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+position: absolute;
+
+
+
+
+}

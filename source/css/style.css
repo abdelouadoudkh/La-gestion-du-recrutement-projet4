@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #4169e1;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    max-width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand span {
+    color: #ec8349;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+.company-info {
+    background: #f9feff;
+}
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact {
+    background: #f9feff;
+}
+
+/* FORM STYLES */
+.contact form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 9px;
+}
+
+.contact form label {
+    display: block;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form input,
+.contact form select {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ec8349;
+    height: 42px;
+}
+
+.contact form textarea {
+    width: 105%;
+    padding: 1em;
+    border: 1px solid #ec8349;
+    height: 200px;
+    font-size: 20px;
+
+
+}
+
+.contact form button {
+    width: 26%;
+    padding: 1em;
+    margin-right: 3px;
+    border: 1px solid #c9e6ff;
+
+}
+
+.contact form button {
+    background: #ec8349;
+    border: 0;
+    float: right;
+    color: #fff;
+    opacity: .7;
+
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #ec8349;
+    opacity: 1;
+    outline: 0;
+    transition:
+        /*background-color*/
+            2s ease-out;
+    cursor: pointer;
+    border-color: #ec8349;
+}
+
+/* LARGE SCREENS */
+@media(min-width:1200px) {
+    .wrapper {
+        display: grid;
+       /*grid-template-columns:  2fr;*/
+
+    }
+
+    .wrapper>* {
+        /*  padding:2em;*/
+    }
+
+    .company-info h3,
+    .company-info ul,
+    .brand {
+        text-align: left;
+    }
+}
+
+.nobr {
+    border-width: 0px !important;
+    border: none !important;
+    font-size: 15px;
+}
+
+.nobr:focus {
+    outline: none;
+}
+
+
+/*
+hide content using fieldset
+
+*/
+
+
+fieldset {
+    border: 0;
+
+}
+
+/*
+.fr fieldset:not(:nth-of-type(1)){
+ display: none;
+}*/
+
+
+.step {
+    display: none;
+}
+
+/* .step-01 {
+  display: block;
+} */
+
+.step-navigation {
+    margin: 25px 0;
+    /*padding: 10px 0;*/
+}
+
+.nav-div .num {
+    width: 20px;
+    height: 20px;
+    background: #4169e1;
+    color: #fff;
+    padding: 10px 19px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.nav-div.active .num {
+    width: 20px;
+    height: 20px;
+    background: #ec8349;
+    color: #fff;
+    padding: 10px 19px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.right-line:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #4169e1;
+    margin-top: 3%;
+    background: #ec8349;
+}
+
+.left-line:before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    line-height: 30px;
+    border: 2px solid #4169e1;
+    background-color: #4169e1;
+    display: none;
+    text-align: center;
+    transition: all .8s;
+}
+
+.nav-div {
+    position: relative;
+    text-align: center;
+}
+
+.step-navigation ul {
+    text-align: center;
+}
+
+.step-navigation li {
+    display: inline-block;
+    width: 31%;
+}
+
+.step.active {
+    display: block !important;
+}
+
+
+
+
+/*****************************************
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+**/
+
+
+
+
+/*  style drop */
+
+
+.image-preview{
+    width: 100px;
+    min-height: 10px;
+    /*border: 2px solid #dddddd;*/
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.image-preview__image{
+    display: none;
+    width: 100%;
+
+}
+
+#the-count {
+    float: right !important;
+    padding: 0.1rem 0 0 0;
+    /*font-size: 0.875rem;*/
+
+}
